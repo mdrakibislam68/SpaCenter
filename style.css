@@ -1,0 +1,1049 @@
+*{
+	margin: 0;
+	padding: 0;
+	/*max-width: 900px;*/
+
+}
+body{
+	/*max-width: 2300px;*/
+}
+.main{
+	/*width:700px;*/
+	/*height: 100px;*/
+	/*margin: 0 auto;*/
+	/*max-width: 900px;*/
+
+	height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr .5fr 1.5fr;
+    grid-template-rows: .5fr 1fr 1fr 3fr;
+    grid-template-areas: 
+        "sidebar nav nav nav banner"
+        "sidebar main  main main banner"
+        "intro intro intro intro banner"
+        "demo content1 content2 content2 banner"
+        "footer footer footer footer adv";
+
+}
+.main .header{
+	/*display: inline-block;*/
+	width: 800px;
+	margin: 0 auto;
+	grid-area: nav;
+}
+.main .header .icon{
+	display: inline-block;
+}
+.main .header .icon img{
+	align-items: center;
+	justify-content: center;
+}
+.main .header .icon h3{
+	color: #ddd;
+	/*font-size: 7rem;*/
+	
+
+
+}
+.main .header .nav{
+	display: inline-block;
+}
+.main .header .nav ul{
+	text-align: center;
+	display: flex;
+	list-style: none;
+	margin-left: 0px;
+	/*margin-top: -50px;*/
+}
+.main .header .nav ul li{
+	/*display: flex;*/
+	text-decoration: none;
+	margin: 5px;
+
+
+}
+.main .header .nav ul li a{
+	text-decoration: none;
+	color: #34454B;
+	font-family: sans-serif;
+	font-size: .8rem;
+	font-weight: bold;
+	margin: 15px;
+
+
+}
+.main .side{
+	display: inline-block;
+    grid-area: sidebar;
+    height: 700px;
+
+}
+.main .side img{
+	width: 250px;
+	height: 700px;
+}
+.main .main-heading{
+    grid-area: main;
+    margin-top: 150px;
+    /*width: 1000px;*/.main .main-heading .appointment8
+}
+.main .main-heading h5{
+	color: #FE817D;
+	padding: 7px;
+	letter-spacing: .1rem;
+}
+.main .main-heading h2{
+	padding: 5px;
+	margin-top: 7px;
+	font-size: 3.7rem;
+}
+.main .main-heading p{
+	padding: 5px;
+	color: #9C9C9C;
+}
+.main .main-heading button{
+	margin: 30px 5px;
+	padding: 13px 25px;
+	font-size: .7rem;
+	background: #FE817D;
+	color: #fff;
+	border-color: #fff;
+	box-shadow: none;
+	border: 0;
+}
+.main .main-heading .play{
+	display: flex;
+	/*position: absolute;*/
+	margin-top: -70px;
+	margin-left: 190px;
+}
+.main .banner{
+	/*position: absolute;*/
+}
+.main  .banner img{
+	/*border-top-left-radius: 40%;*/
+	/*border-bottom-left-radius: 40%;*/
+	display: flex;
+	grid-area: banner;
+	width: 500px;
+	height: 650px;
+	position: absolute;
+	margin-left: 570px;
+	/*float: right;*/
+	margin-top: -90px;
+}
+
+.main .main-heading .intro{
+	/*position: absolute;*/
+    grid-area: intro;
+    /*margin: 70px 425px; */
+    width: 700px;
+
+}
+.main .main-heading .intro #flower{
+	/*display: inline-block;*/
+	/*left: -90px;*/
+	/*top: 190px;*/
+	/*position: absolute;*/
+	margin-top: 90px; 
+	margin-left:  -50px;
+	width: 110px;
+}
+.main .main-heading .intro #icon{
+	/*margin-top: 190px;
+	margin-left:  425px;*/
+	margin: 0 auto;
+	/*margin-top: 150px;*/
+	display: flex;
+	/*position: absolute;*/
+	/*width: 75px;*/
+}
+.main .main-heading .intro h3{
+	/*position: absolute;*/
+	/*margin: 0;*/
+	/*padding: 0;*/
+	/*margin: 0 auto;
+	display: flex;
+	position: relative;*/
+	/*margin-left: 230px;*/
+}
+.main .main-heading .intro h1{
+	margin: 10px 0 10px 130px;
+}
+.main .main-heading .intro p{
+	margin: 7px;
+	padding: 7px;
+	/*letter-spacing: .05rem;*/
+	line-height: 1.5rem;
+}
+.main .main-heading .intro a button{
+	margin-left: 290px;
+	border-radius: 20px;
+}
+.main .main-heading .demo{
+	/*grid-area: demo;*/
+}
+.main .main-heading .demo ul{
+	display: flex;
+	margin-left: -230px;
+	/*padding: 5px;*/
+}
+.main .main-heading .demo ul li{
+	margin-left: 5px;
+}
+.main .main-heading .demo ul li img{
+	width: 318px;
+	height: 350px;
+	/*position: absolute;*/
+	/*margin: 0 auto;*/
+}
+.main .main-heading .demo  .middle{
+	transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  margin-top: -355px;
+  /*margin-bottom:  300px;*/
+  background: #F77C74;
+  width: 309px;
+  height: 345px;
+  /*transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
+  /*text-align: center;*/
+}
+/*.main .main-heading .demo ul li:hover img{
+	opacity: 0;
+}*/
+.main .main-heading .demo ul li:hover .middle{
+	opacity: 1;
+	/*background-color: #F77C74;
+	position: absolute;
+	top: 100%;
+	left: 100%;
+	height: 300px;
+	transform: translate(-100%, -100%);*/
+
+}
+.main .main-heading .demo ul li .middle img{
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	display: flex;
+	margin-top: 150px;
+}
+.main .main-heading .demo ul li .middle span{
+	/*text-align: center;*/
+	margin-left: 100px;
+	position: absolute;
+	color: #fff;
+}
+.middle{
+	/*transition: .5s ease;*/
+	/*opacity: 0;*/
+	/*position: absolute;*/
+
+}
+.main .main-heading .demo ul li:hover .middle{
+	/*opacity: 0;*/
+}
+.main .main-heading .procedure{
+	margin-left: -130px;
+	width: 1100px;
+}
+.main .main-heading .procedure div{
+	/*display: flex;*/
+	display: inline-block;
+	box-sizing: border-box;
+	width: 350px;
+	border: 2px solid #EEF0F2;
+	margin: 0 auto;
+}
+.main .main-heading .procedure div:hover{
+	box-shadow: 
+}
+.main .main-heading .procedure h1{
+	/*display: inline-block;*/
+	/*position: absolute;*/
+	/*display: flex;*/
+	margin: 0 auto;
+	text-align: center;
+	margin: 70px 0px 20px 0;
+}
+.main .main-heading .procedure p{
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.3rem;
+	margin-bottom: 30px;
+}
+.main .main-heading .procedure img{
+	padding: 13px;
+}
+.main .main-heading .procedure button{
+	display: flex;
+	margin: 0 auto;
+	background: #30383B;
+}
+.main .main-heading .procedure button:hover{
+	background: #FE817D;
+}
+.main .main-heading .procedure a{
+	text-decoration: none;
+	color: #fff;
+
+}
+/*.main .main-heading .procedure1{
+	width: 350px;
+	margin: 0 auto;
+	display: flex;
+
+}*/
+.main .main-heading .procedure1 h5{
+	margin-left: 110px;
+	color: 
+
+}
+.main .main-heading .procedure1:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  transition: box-shadow .3s;
+}
+.main .main-heading .procedure1 button{
+	border-radius: 40px;
+	margin-bottom: 30px;
+	color: #384043;
+	/*padding: */
+}
+.main .main-heading .executive{
+	background-color: #FFF9F9;
+	width: 1300px;
+	height: 500px;
+	margin-left: -230px;
+	margin-top: 70px;
+	/*position: absolute;*/
+}
+.main .main-heading .executive img{
+	margin: 0 auto;
+	display: flex;
+	/*margin-top: 90px;*/
+	padding-top: 50px;
+}
+.main .main-heading .executive p{
+	margin: 0 auto;
+	/*display: flex;*/
+	text-align: center;
+	width: 700px;
+	/*box-sizing: border-box;*/
+	padding: 30px 50px;
+}
+.main .main-heading .executive h4{
+	/*background: #FFF9F9;*/
+	text-align: center;
+	padding: 9px;
+	padding: 40px 0;
+}
+.main .main-heading .Experienced{
+	margin-top: 40px;
+	/*margin: 0 auto;*/
+	/*display: flex;*/
+	/*width: 900px;*/
+
+}
+.main .main-heading .Experienced h1{
+	/*margin: 0 auto;*/
+	/*display: flex;*/
+	text-align: center;
+}
+.main .main-heading .Experienced p{
+	text-align: center;
+	margin: 30px 70px;
+
+}
+/*.main .main-heading .team .message #facebook{
+	color: #AC80EE;
+	background: #FF827E;
+	border: 1px solid #919699;
+	width: 23px;
+	padding: 5px;
+	size: 70%;
+	border-radius: 50%;
+}*/
+.main .main-heading .Experienced .team{
+	display: flex;
+	margin-left: -90px;
+}
+.main .main-heading .Experienced .team .team1{
+	margin: 5px;
+}
+.main .main-heading .Experienced .team .team1 .message{
+	box-sizing: border-box;
+	width: 220px;
+	background-color: #fff;
+	/*border: 1px solid #282923;*/
+	margin: 0 auto;
+	margin-top: -45px;
+	margin-left: 70px;
+	position: absolute;
+	/*justify-content: center;*/
+	padding: 27px;
+	/*opacity: 0;*/
+}
+.main .main-heading .Experienced .team .team1 .message .link{
+	/*margin-left: 13px;*/
+	opacity: 0;
+}
+.main .main-heading .Experienced .team .team1 .message:hover  .link{
+	opacity: 1;
+	/*zoom:5%;*/
+	transition: .9s;
+}
+.main .main-heading .Experienced .team .team1 .message .facebook{
+	border: 1px solid #282923;
+	border-radius: 50px;
+	padding: 5px;
+	width: 20px;
+	height: 20px;
+}
+.main .main-heading .Experienced .team .team1 .message .facebook:hover{
+	background-color: #FC827F;
+	/*border-radius: 35px;*/
+	/*font-size: 5rem;*/
+	color: #fff;
+
+}
+
+.main .main-heading .Experienced .team .team1 .message:hover{
+	transform: scale(1.2);
+	transition: 1.5s;
+
+}
+.main .main-heading .Experienced .team .team1 .message h4,h6,h3{
+	text-align: center;
+	padding: 5px;
+	margin-top: 0;
+	padding-top: 0;
+}
+.main .main-heading .appointment{
+	position: absolute;
+	background: #FFF9F9;
+	width: 1320px;
+	height: 400px;
+	margin-top: 190px;
+	left: 0px;
+}
+.main .main-heading .appointment #appointment{
+	/*margin-left: -230px;*/
+	/*position: absolute;*/
+	width: 450px;
+	float: left;
+
+}
+.main .main-heading .appointment .input-data{
+	/*float: right;*/
+	position: absolute;
+	margin-left: 500px;
+	margin-top: 50px;
+	width: 190px;
+	height: 30px;
+	
+	border: none;
+}
+ /*.input-data{
+	position: relative;
+	height: 30px;
+	width: 100px;
+	border: none;
+	border-bottom: 1px solid black;
+}*/
+ .input-data input{
+	height: 100%;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid silver;
+	font-size: 1rem;
+	padding: 3px;
+	background-color: #FFF9F9;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+	transform: translateY(-15px);
+	border: none;
+	background-color: #FFF9F9;
+	margin: 1px;
+	border-radius: 2px;
+	font-size: 1rem;
+	left: 3px;
+	transition: all 0.3s ease;
+}
+ .input-data label{
+	position: absolute;
+	bottom: 5px;
+	border: none;
+	pointer-events: none;
+	transition: all 0.1s ease;
+}
+
+
+
+.main .main-heading .appointment .service{
+	float: right;
+	position: absolute;
+	margin-left: 500px;
+	margin-top: 110px;
+	width: 190px;
+	height: 30px;
+	
+	border: none;
+}
+.service{
+	position: absolute;
+	height: 30px;
+	width: 100px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+ .service input{
+	height: 100%;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid silver;
+	font-size: 1rem;
+	padding: 3px;
+	background-color: #FFF9F9;
+}
+.service input:focus ~ label,
+.service input:valid ~ label{
+	transform: translateY(-15px);
+	border: none;
+	background-color: #FFF9F9;
+	margin: 1px;
+	border-radius: 2px;
+	font-size: 1rem;
+	left: 3px;
+	transition: all 0.3s ease;
+}
+ .service label{
+	position: absolute;
+	bottom: 5px;
+	border: none;
+	pointer-events: none;
+	transition: all 0.1s ease;
+}
+.service #service-arrow{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	/*display: flex;*/
+	float: right;
+	bottom: 0px;
+	left: 180px;
+}
+/*.service .service-menu ul{
+	display: none;
+
+}*/
+.service .service-menu ul li{
+	display: column;
+	list-style: none;
+	margin-left: 40px;
+}
+.service .service-menu ul li a{
+	margin: 5px;
+	text-decoration: none;
+	display: inline-block;
+	/*position: absolute;*/
+	background-color: #E4D3B9;
+	color: black;
+	margin: 3px;
+	width: 150px;
+	height: 20px;
+	text-align: center;
+	border-radius: 7px;
+}
+.service .service-menu ul li a:hover{
+	background: #916852;
+	color: #fff;
+}
+
+/*.service .service-menu:hover ul{
+	display: block;
+	position: absolute;
+	display: flex;
+}*/
+.main .main-heading .appointment .date{
+	/*float: right;*/
+	/*position: relative;*/
+	margin-left: 500px;
+	margin-top: 190px;
+	width: 190px;
+	height: 30px;
+	
+	border: none;
+}
+.date{
+	/*position: relative;*/
+	height: 30px;
+	width: 100px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+ .date input{
+	height: 100%;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid silver;
+	font-size: 1rem;
+	padding: 3px;
+	background-color: #FFF9F9;
+}
+.date input:focus ~ label,
+.date input:valid ~ label{
+	transform: translateY(-15px);
+	border: none;
+	background-color: #FFF9F9;
+	margin: 1px;
+	border-radius: 2px;
+	font-size: 1rem;
+	left: 3px;
+	transition: all 0.3s ease;
+}
+ .date label{
+	position: relative;
+
+	bottom: 45px;
+	border: none;
+	pointer-events: none;
+	transition: all 0.1s ease;
+}
+.main .main-heading .appointment .email{
+	float: right;
+	position: absolute;
+	right: 350px;
+	top: 50px;
+	width: 190px;
+	height: 30px;
+	border: none;
+}
+.email input{
+	height: 100%;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid silver;
+	font-size: 1rem;
+	padding: 3px;
+	background-color: #FFF9F9;
+	/*margin-top: */
+}
+.email input:focus ~ label,
+.email input:valid ~ label{
+	transform: translateY(-25px);
+	border: none;
+	background-color: #FFF9F9;
+	margin: 1px;
+	border-radius: 2px;
+	font-size: 0.9rem;
+	left: 3px;
+	transition: all 0.3s ease;
+	position: absolute;
+	padding: 5px;
+}
+ .email label{
+	position: absolute;
+	border: none;
+	top: 9px;
+	pointer-events: none;
+	transition: all 0.1s ease;
+}
+.main .main-heading .appointment .phone{
+	float: right;
+	position: absolute;
+	right: 350px;
+	top: 110px;
+	width: 190px;
+	height: 30px;
+	border: none;
+}
+.phone input{
+	height: 100%;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid silver;
+	font-size: 1rem;
+	padding: 3px;
+	background-color: #FFF9F9;
+	/*margin-top: */
+}
+.phone input:focus ~ label,
+.phone input:valid ~ label{
+	transform: translateY(-25px);
+	border: none;
+	background-color: #FFF9F9;
+	margin: 1px;
+	border-radius: 2px;
+	font-size: 1.1rem;
+	left: 3px;
+	transition: all 0.3s ease;
+	position: absolute;
+	padding: 5px;
+}
+ .phone label{
+	position: absolute;
+	border: none;
+	top: 9px;
+	pointer-events: none;
+	transition: all 0.1s ease;
+}
+.main .main-heading .appointment .time{
+	float: right;
+	position: absolute;
+	right: 350px;
+	top: 195px;
+	width: 190px;
+	height: 30px;
+	border: none;
+}
+.time input{
+	height: 100%;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid silver;
+	font-size: 0.9rem;
+	/*padding: 3px;*/
+	background-color: #FFF9F9;
+	/*margin-top: */
+}
+.time input:focus ~ label,
+.time input:valid ~ label{
+	/*transform: translateY(-5px);*/
+	border: none;
+	background-color: #fff;
+	/*margin: 1px;*/
+	border-radius: 2px;
+	font-size: 1rem;
+	left: 3px;
+	/*transition: all 0.3s ease;*/
+	position: absolute;
+	/*padding: 2px;*/
+}
+ .time label{
+	position: absolute;
+	border: none;
+	top: -10px;
+	left: 3px;
+	font-size: 1rem; 
+	margin: 0;
+	padding: 0;
+	pointer-events: none;
+	transition: all 0.1s ease;
+}
+.main .main-heading .appointment .note{
+	float: left;
+	position: absolute;
+	left: 500px;
+	top: 270px;
+	width: 470px;
+	height: 30px;
+	border: none;
+}
+.note input{
+	height: 100%;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid silver;
+	font-size: 1rem;
+	padding: 3px;
+	background-color: #FFF9F9;
+	/*margin-top: */
+}
+.note input:focus ~ label,
+.note input:valid ~ label{
+	transform: translateY(-25px);
+	border: none;
+	background-color: #FFF9F9;
+	margin: 1px;
+	border-radius: 2px;
+	font-size: 1.1rem;
+	left: 3px;
+	transition: all 0.3s ease;
+	position: absolute;
+	padding: 5px;
+}
+ .note label{
+	position: absolute;
+	border: none;
+	top: 9px;
+	pointer-events: none;
+	transition: all 0.1s ease;
+}
+.main .main-heading .appointment .appoinment2{
+	margin-top: 90px;
+	margin-left: 500px;
+}
+.main .main-heading .appointment .appoinment2 button:hover{
+	background: #282923;
+	color: #fff;
+	transition: all 0.3s ease;
+}
+.main .latest{
+	position: relative;
+	
+	/*width: 1100px;*/
+}
+.main .latest h1{
+	/*margin-left: 230px;*/
+	text-align: center;
+}
+
+.main .latest p{
+	text-align: center;
+	margin: 0 auto;
+	/*margin-left: 177px;*/
+}
+.main .main-heading .latest{
+	margin-left: 90px;
+	width: 1200px;
+	padding: 15px;
+}
+.main .main-heading .latest .latest1{
+	/*display: flex;*/
+	display: inline-block;
+	box-sizing: border-box;
+	width: 352px;
+	border: 2px solid #EEF0F2;
+	margin-left: 20px;
+	/*padding: 5px;*/
+}
+.main .main-heading .latest div:hover{
+	/*box-shadow: 1px solid #6D6E6A;*/
+}
+.main .main-heading .latest1 h5{
+	/*display: inline-block;*/
+	/*position: absolute;*/
+	/*display: flex;*/
+	/*margin: 0 auto;*/
+	/*text-align: center;*/
+	/*bottom: 140px;*/
+	background: #fff;
+}
+.main .main-heading .latest1 h1{
+	/*position: absolute;*/
+	/*width: 40px;*/
+	font-size: 1.7rem;
+	font-family: sans-serif;
+	font-weight: 50;
+}
+.main .main-heading .latest p{
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.3rem;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	/*position: relative;*/
+	bottom: -30px;
+	color: black;
+}
+.main .main-heading .latest img{
+	padding: 0px;
+	width: 350px;
+	height: 300px;
+	margin-bottom: 15px;
+}
+.main .main-heading .latest1 button{
+	display: flex;
+	margin: 0 auto;
+	background: #30383B;
+	/*bottom: 5px;*/
+
+	margin-top: 5px;
+}
+.main .main-heading .latest button:hover{
+	background: #FE817D;
+	transition: 0.9s all ease;
+}
+.main .main-heading .latest a{
+	text-decoration: none;
+	color: #fff;
+
+}
+/*.main .main-heading .procedure1{
+	width: 350px;
+	margin: 0 auto;
+	display: flex;
+
+}*/
+.main .main-heading .latest1 h5{
+	margin-left: 110px;
+	/*color: */
+
+}
+.main .main-heading .latest1:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  transition: transform .7s ease;
+  transform: scale(1.1);
+}
+.main .main-heading .latest1 button{
+	border-radius: 40px;
+	margin-bottom: 30px;
+	color: #384043;
+	/*padding: */
+}
+.appointment .touch h1{
+	margin-top: 70px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.appointment .touch p{
+	text-align: center;
+	margin-bottom: 90px;
+}
+.appointment .touch .location {
+	width: 550px;
+	margin: 0;
+	float: left;
+}
+.appointment .touch .location ul li{
+	/*text-align: center;*/
+	margin-left: 230px;
+	margin-top: 30px;
+	list-style: none;
+}
+.appointment .touch .location ul li img{
+	/*position: absolute;*/
+	width: 50px;
+	margin-right: 20px;
+	
+}
+.appointment .touch .location ul li h5{
+	padding: 3px;
+	color: #ACACAC;
+	font-family: cursive;
+	font-size: 0.7rem;
+}
+.appointment .touch{
+	/*display: flex;*/
+	margin-bottom: 50px;
+}
+.appointment .touch .input{
+	float: right;
+	/*display: flex;*/
+	margin-top: 20px;
+	/*position: absolute;*/
+	margin-left: /*5*/0px;
+	width: 750px;
+
+	/*padding: 5px;*/
+}
+
+.appointment .touch input{
+	height: 35px;
+	width: 400px;
+	border: 1px solid #ACACAC;
+	border-bottom: 2px solid silver;
+	border-radius: 4px;
+	font-size: 1rem;
+	/*padding: 3px;*/
+	/*background-color: #FFF9F9;*/
+	margin-top: 15px; 
+	/*margin-left: 5px;*/
+}
+.touch input:focus ~ label,
+.touch input:valid ~ label{
+	transform: translateY(-20px);
+	border: none;
+	background-color: #FFF;
+	/*margin: 1px;*/
+	border-radius: 2px;
+	font-size: 0.9rem;
+	/*left: 3px;*/
+	transition: all 0.3s ease;
+	position: absolute;
+	padding: 2px;
+}
+
+ .touch label{
+	position: absolute;
+	border: none;
+	
+	/*bottom:  90px;*/
+	margin-top:  -30px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	pointer-events: none;
+	transition: all 0.1s ease;
+}
+.appointment .touch textarea{
+	margin-top: 15px;
+}
+ .touch .comment textarea{
+ 	height: 100px;
+ 	width: 400px;
+ 	padding: 15px 10px;
+
+ }
+  .comment label{
+	position: absolute;
+	border: none;
+	
+	/*bottom:  90px;*/
+	margin-top:  -49px;
+	/*margin-bottom: 30px;*/
+	margin-left: 10px;
+	pointer-events: none;
+	transition: all 0.1s ease;
+}
+ .comment textarea:focus ~ label,
+.comment textarea:valid ~ label{
+	transform: translateY(-95px);
+	border: none;
+	background-color: #FFF;
+	/*margin: 1px;*/
+	border-radius: 2px;
+	font-size: 0.9rem;
+	/*left: 3px;*/
+	transition: all 0.3s ease;
+	/*position: absolute;*/
+	padding: 2px;
+	/*box-sizing: border-box;*/
+}
+ .footer{
+ 	/*position: absolute;*/
+ 	background-color: #FFF9F9;
+ 	margin-top: 500px;
+ 	padding: 30px;
+ 	width: 1300px;
+ }
+.footer img{
+ 	width: 64px;
+ 	height: 55px;
+ 	margin: 0 auto;
+ 	display: flex;
+ 	margin-top: 100px;
+ 	/*position: absolute;*/
+ }
+ .footer h1{
+ 	text-align: center;
+ }
+ .footer ul{
+ 	display: flex;
+ 	width: 550px;
+ 	text-align: center;
+	margin: 0 auto;
+	margin-top: 30px;
+ }
+  .footer ul li{
+  	padding: 20px;
+  	list-style: none;
+  	width: 87px;
+
+  }
+  .footer ul li a{
+  	text-decoration: none;
+  	color: #273943;
+  	/*width: 150px;*/
+  	/*background-color: #A8A8A8;*/
+  	padding: 10px;
+
+  }
+  .footer ul li a:hover{
+  	color: #fff;
+  	background-color: #A8A8A8;
+  	padding: 10px;
+  	
+  }
